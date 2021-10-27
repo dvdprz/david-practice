@@ -17,7 +17,6 @@ p {
 	font-family: 'Titillium Web', sans-serif;
 	font-size: 16px;
 	text-align: center;
-	margin: auto auto 88px auto;
 	max-width: 900px;
 	border-radius: 24px;
 	padding: 24px;
@@ -30,6 +29,7 @@ p {
 }
 
 .content {
+	max-width: 960px;
 	padding: 24px;
 }
 
