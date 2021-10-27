@@ -3,16 +3,13 @@ body {
   object-position: center;
   display: block;
   height: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
 
 h1 {
 	font-family: 'Titillium Web', sans-serif;
-	color: black;
 	text-align: center;
 	font-size:  32px;
-	padding-top: 40px;
 }
 
 p {
@@ -24,4 +21,24 @@ p {
 	max-width: 900px;
 	border-radius: 24px;
 	padding: 24px;
+}
+
+.header {
+	padding: 16px 48px 16px 48px;
+	background: rgba(21, 26, 33, 0.8);
+	color: snow;
+}
+
+.content {
+	padding: 24px;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%
+}
+
+.sticky + .content {
+	padding-top: 102px;
 }
