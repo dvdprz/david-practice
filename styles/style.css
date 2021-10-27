@@ -1,5 +1,33 @@
+:root {
+	--black: #252E39;
+	--white: #F3F3F3;
+	--gray0: #2D3846;
+	--gray20: #354252;
+	--gray40: #6E7782;
+	--gray60: #8E959E;
+	--red: #FF6060;
+	--yellow: #FFF50D;
+	--green: #24FF00;
+	--blue: #4EB5FF;
+	--teal: #41E9D3;
+	--pink: #FF0DDC;
+	--vantablack: #151A21;
+	--opacBlack90: rgba(21, 26, 33, 0.9);
+
+	--bg: var(--black);
+	--bg2: var(--vantablack);
+	--bg3: var(--opacBlack90);
+	--fg: var(--white);
+	--fg2: var(--gray40);
+	--fg3: var(--vantablack);
+	--info: var(--blue);
+	--success: var(--green);
+	--warning: var(--yellow);
+	--danger: var(--red);
+}
+
 body {
-  background-image: url(../assets/seussibles-pattern-01.png);
+  background-image: url(../assets/pattern-01.png);
   object-position: center;
   display: block;
   height: 100%;
@@ -8,29 +36,40 @@ body {
 
 h1 {
 	font-family: 'Titillium Web', sans-serif;
+	color: var(--fg3);
 	text-align: center;
 	font-size:  32px;
 }
 
+h2 {
+	font-family: 'Titillium Web', sans-serif;
+	color: var(--fg1);
+	font-size:  22px;
+}
+
 p {
-	background-color: whitesmoke;
+	background-color: var(--bg);
 	font-family: 'Titillium Web', sans-serif;
 	font-size: 16px;
+	color: var(--fg);
 	text-align: center;
-	max-width: 900px;
 	border-radius: 24px;
 	padding: 24px;
 }
 
 .header {
 	padding: 16px 48px 16px 48px;
-	background: rgba(21, 26, 33, 0.8);
-	color: snow;
+	background: var(--bg3);
+	color: var(--fg);
 }
 
 .content {
 	max-width: 960px;
 	padding: 24px;
+}
+
+.container {
+	flex-direction: row | row-reverse | column | column-reverse;
 }
 
 .sticky {
