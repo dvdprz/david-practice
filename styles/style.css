@@ -68,6 +68,13 @@ p {
 	padding: 24px;
 }
 
+.container {
+	max-width: 960px;
+	padding-left: 24px;
+	padding-right: 24px;
+	justify-content: space-between;
+}
+
 .sticky {
 	position: fixed;
 	top: 0;
@@ -88,15 +95,16 @@ p {
 }
 
 .flex-item {
+	font-family: 'Titillium Web', sans-serif;
+	flex: 1;
 	background: var(--bg);
-	padding: 5px;
-	width: 200px;
-	height: 150px;
-	margin-top: 10px;
-	line-height: 150px;
+	column-gap: 16px;
+	padding: 16px;
+	height: 80px;
+	margin-top: 16px;
 	border-radius: 24px;
 	color: var(--fg);
 	font-weight: bold;
-	font-size: 3em;
+	font-size: 48px;
 	text-align: center;
   }
